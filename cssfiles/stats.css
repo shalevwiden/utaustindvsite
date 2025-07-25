@@ -432,6 +432,7 @@ Begin left content stuff
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 #tablecontainer {
   width: 90%;
