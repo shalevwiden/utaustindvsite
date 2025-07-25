@@ -2,7 +2,7 @@ console.log("Running hover script");
 breadcrumbs_current = document.getElementById("current");
 
 schoolnametitle = document.getElementById("schoolnametitle");
-// add conditonals so it can work for both files
+// add conditonals so it can work with all files. Only if the element exists will it proceed
 if (schoolnametitle) {
   // school file
   const originalcolor = getComputedStyle(schoolnametitle).color;
