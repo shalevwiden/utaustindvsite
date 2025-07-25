@@ -1,0 +1,60 @@
+@keyframes scaleup {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scaleupless {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.linkbox a i:hover {
+  cursor: pointer;
+  animation: scaleup 1.2s ease 1 forwards;
+}
+/* for about.html */
+.icons a:hover {
+  cursor: pointer;
+  animation: scaleupless 1.2s ease 1 forwards;
+}
+.fa-linkedin:hover {
+  color: #0e6899 !important;
+}
+.icons a .bi-substack:hover {
+  fill: #f36822;
+}
+
+/* add animations for GitHub and LinkedIn icons later as well */
+
+@keyframes scaleandspin {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.35) rotate(360deg);
+  }
+
+  53% {
+    transform: scale(1.35) rotate(360deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(720deg);
+  }
+}
+footer #smalllogo:hover {
+  cursor: pointer;
+  animation: scaleandspin 2.6s ease 1 forwards;
+}

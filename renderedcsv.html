@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Rendered CSV?</h1>
+    <a
+      href="/Users/shalevwiden/Downloads/Projects/degreeview/School of
+  Architecture/Architecture-Architectural Engineering
+  (BArch-BSArchE)/architecture-architecturalengineering-barch-bsarche-courses.csv"
+      id="csvfile"
+      style="display: none"
+    ></a>
+    <div id="output"></div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script>
+    // Load CSV file from your project
+    csvlink = document.getElementById("csvfile").href;
+    console.log(csvlink);
+    fetch(csvlink)
+      .then((response) => response.text())
+      .then((csvData) => {
+        // Convert CSV to SheetJS workbook
+        const workbook = XLSX.read(csvData, { type: "string" });
+
+        // Get the first sheet and convert to HTML
+        const firstSheet = workbook.SheetNames[0];
+        const html = XLSX.utils.sheet_to_html(workbook.Sheets[firstSheet]);
+
+        // Show the HTML table
+        document.getElementById("output").innerHTML = html;
+      });
+  </script>
+</html>
