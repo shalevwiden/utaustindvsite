@@ -1,7 +1,9 @@
 ## DegreeView Website:
 
 DegreeView is a website that provides and displays data visualizations and data on degree programs and courses at the University of Texas at Austin. All data is sourced directly from the undergraduate catalog of the University of Texas at Austin, catalog.utexas.edu.
-
+<br>
+See the website live at https://www.degreeviewsite.com/
+<br>
 DegreeView uses mermaid.js for creating flowchart graphs.
 The following python libraries are also used: BeautifulSoup and Requests (for web scraping), csv and OpenPyXL (for tabular formatting of data), google-cloud (for automating uploading to Google Cloud Storage), and ReportLab, Pillow, PyPDF2, and cairoSVG for pdf generation.
 <br><br>
