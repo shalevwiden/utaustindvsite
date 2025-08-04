@@ -196,21 +196,40 @@
                             <li>
                             <div class="linkbox">
                                 <p>Major Courses CSV</p>
-
+                                
+                                <p>
+                    View:&nbsp;&nbsp;
+                    <a
+                      href="#csvtablecontainer"
+                      target="_self"
+                      ><i class="fa-regular fa-eye"></i
+                    ></a>
+                  </p>
                                 <p>
                                 <!-- download attribute means they will download it -->
                                 Download:&nbsp;&nbsp;<a
                                     href="https://storage.googleapis.com/degreeview-ut/collegeofliberalarts/csvs/sociology-ba-courses.csv"
+                                    id="majorcoursesdownload"
                                     download
                                     ><i class="fa-solid fa-arrow-up-from-bracket"></i
                                 ></a>
                                 </p>
+
                             </div>
                             </li>
 
                             <li>
                             <div class="linkbox">
                                 <p>Sample Semester Layout CSV</p>
+
+                                 <p>
+                    View:&nbsp;&nbsp;
+                    <a
+                      href="sociology-ba-renderedcsv.html"
+                      target="_blank"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                  </p>
                                 <p>
                                 <!-- download attribute means they will download it -->
                                 Download:&nbsp;&nbsp;<a href="https://storage.googleapis.com/degreeview-ut/collegeofliberalarts/csvs/sociology-ba-semestercsvfile.csv" download
@@ -241,8 +260,11 @@
                 </div>
                 
  <div class="undermainsite">
-        <!-- this can be empty and like 20 px tall just to take up space, and be used for something in the future
-          -->
+        < <!-- contains rendered csv -->
+        <div class="renderedcsvdiv">
+          <h3 id="csvheading">Degreename Courses CSV</h3>
+          <div id="csvtablecontainer"></div>
+        </div>
       </div>
 
 
@@ -271,6 +293,8 @@
                 <!-- Hover Script -->
 
                 <script src="../javascript_files/headingcolorchange.js"></script>
+                <!-- degreecsvrenderedscript in same html file-->
+                 <script src="../javascript_files/degreecsvrendered_samefile.js"></script>
                 </div>
                 </body>
 
