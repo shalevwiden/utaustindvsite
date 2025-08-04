@@ -1,6 +1,7 @@
+// this is for the stats page sheetJs
+
 console.log("Running sheet.js for stats file");
 
-//
 window.addEventListener("DOMContentLoaded", async () => {
   //
   const container = document.getElementById("tablecontainer");
@@ -23,7 +24,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     // Inject table
     container.innerHTML = htmlTable;
   } catch (err) {
-    container.innerHTML = `<p style="color:red;">Failed to load CSV: ${err.message}</p>`;
+    container.innerHTML = `<p style="color:red; font-weight:bold;">Failed to load CSV: ${err.message}</p>`;
     console.error("CSV load error:", err);
   }
 });

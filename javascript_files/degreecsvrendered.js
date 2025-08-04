@@ -4,6 +4,7 @@ console.log("Running degreecsvrendered file");
 
 // there will be a download section. And this one will be the same for all of them.
 let csvtorender = document.getElementById("downloadcsv").href;
+console.log(`CSV to render ${csvtorender}`);
 
 //
 window.addEventListener("DOMContentLoaded", async () => {
@@ -26,7 +27,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     // Inject table
     tablecontainer.innerHTML = htmlTable;
   } catch (err) {
-    tablecontainer.innerHTML = `<p style="color:red;">Failed to load CSV: ${err.message}</p>`;
+    tablecontainer.innerHTML = `<p style="color:red; font-weight:bold; text-align:center;">Failed to load CSV: ${err.message}</p>`;
     console.error("CSV load error:", err);
   }
 });

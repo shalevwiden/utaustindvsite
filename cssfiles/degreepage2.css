@@ -328,7 +328,7 @@ Begin left content stuff
   width: 100%;
   /* this is for now essentially footer top margin */
   height: auto;
-  padding: 20px 0px;
+  padding: 20px 0px 50px 0px;
 }
 .renderedcsvdiv {
   display: flex;
@@ -345,9 +345,9 @@ Begin left content stuff
   height: auto;
 }
 #csvheading {
-  margin: 30px;
   color: #284dbc;
-  font-size: 20px;
+  font-size: 26px;
+  margin: 19px;
 }
 
 footer {
