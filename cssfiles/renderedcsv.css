@@ -1,0 +1,16 @@
+.undermainsite {
+  width: 100%;
+  flex: 1 1 350px;
+  border-top: 10px solid var(--secondarynavy);
+  border-bottom: 10px solid var(--secondarynavy);
+  height: auto;
+  padding: 20px 0px 50px 0px;
+}
+#semester-csvtablecontainer {
+  width: 90%;
+  border-radius: 26px;
+  /* border: 5px solid #081a75; */
+  padding: 0px;
+  min-height: 100px;
+  height: auto;
+}

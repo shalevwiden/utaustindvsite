@@ -1,4 +1,4 @@
-// this is the one thats rendered on another page
+// this is the one thats rendered on another page. For now its the semester CSV file.
 
 console.log("Running degreecsvrendered file");
 
@@ -9,7 +9,7 @@ console.log(`CSV to render ${csvtorender}`);
 //
 window.addEventListener("DOMContentLoaded", async () => {
   // table container is where the
-  const container = document.getElementById("csvtablecontainer");
+  const tablecontainer = document.getElementById("semester-csvtablecontainer");
   const csvUrl = csvtorender;
   try {
     const response = await fetch(csvUrl);

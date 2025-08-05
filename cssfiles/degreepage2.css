@@ -1,6 +1,10 @@
 /* Idea for this one:
 Basically everything is flex. To make it responsive switch direction from flex row to flex column
 */
+:root {
+  --secondarynavy: #153f66;
+  --lighterblue: #284dbc;
+}
 
 *,
 *::before,
@@ -40,7 +44,6 @@ This is all nav bar stuff:*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   flex: 1 1;
 }
 
@@ -127,7 +130,7 @@ still in top nav, but now the homeandabout section
 
 */
 .homeandabout {
-  background-color: #153f66;
+  background-color: var(--secondarynavy);
   width: 25%;
   height: 100px;
   display: flex;
@@ -204,8 +207,8 @@ still in top nav, but now the homeandabout section
   flex-direction: row;
   width: 100%;
   flex: 1 1 350px;
-  border-top: 10px solid #153f66;
-  border-bottom: 10px solid #153f66;
+  border-top: 10px solid var(--secondarynavy);
+  border-bottom: 10px solid var(--secondarynavy);
 }
 
 /* 
@@ -330,25 +333,50 @@ Begin left content stuff
   height: auto;
   padding: 20px 0px 50px 0px;
 }
+
 .renderedcsvdiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
-#csvtablecontainer {
-  width: 90%;
-  border-radius: 26px;
-  border: 5px solid #081a75;
-  padding: 10px;
-  min-height: 100px;
-  height: auto;
-}
+
 #csvheading {
   color: #284dbc;
   font-size: 26px;
   margin: 19px;
 }
+.copyanddownload {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  column-gap: 10px;
+  height: 50px;
+  border: 1px solid black;
+  width: 90%;
+  margin: -20px 0px;
+}
+/* add share icon in the future */
+
+.copyanddownload i {
+  font-size: 28px;
+  color: rgb(21, 21, 69);
+}
+.copyanddownload i:hover {
+  cursor: pointer;
+}
+
+#csvtablecontainer {
+  width: 90%;
+  border-radius: 26px;
+  /* border: 5px solid #081a75; */
+  padding: 0px;
+  min-height: 100px;
+  height: auto;
+}
+/* all table styling is in tablestyling.css  */
 
 footer {
   height: 120px;

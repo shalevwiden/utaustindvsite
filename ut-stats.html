@@ -39,6 +39,8 @@
 
     <!-- animation stylesheet -->
     <link rel="stylesheet" href="cssfiles/animations.css" />
+    <!-- table styling -->
+    <!-- <link rel="stylesheet" href="cssfiles/tablestyling.css" /> -->
     <!-- Barlow Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -167,9 +169,9 @@
           <img src="metaassets/topmajorhours.png" alt="" id="topmajorhours" />
         </div>
         <!-- end mini main site container -->
-        <div class="sheetjs">
+        <div class="renderedcsvdiv">
           <h3 id="csvheading">University of Texas Stats CSV, rendered</h3>
-          <div id="tablecontainer"></div>
+          <div id="csvtablecontainer"></div>
         </div>
       </div>
       <!-- put something here later -->
@@ -202,7 +204,8 @@
     </div>
     <script src="javascript_files/headingcolorchange.js"></script>
     <!-- sheet js stuff -->
-    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
-    <script src="javascript_files/sheetcsvcode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+    <script src="javascript_files/statstable.js"></script>
   </body>
 </html>

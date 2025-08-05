@@ -39,6 +39,10 @@
 
     <!-- animation stylesheet -->
     <link rel="stylesheet" href="../cssfiles/animations.css" />
+    <!-- table styling -->
+    <link rel="stylesheet" href="../cssfiles/tablestyling.css" />
+    <link rel="stylesheet" href="cssfiles/tablestyling.css" />
+    <link rel="stylesheet" href="cssfiles/renderedcsv.css" />
     <!-- Barlow Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -93,158 +97,19 @@
         </div>
       </div>
 
-      <div class="mainsite">
-        <div class="leftcontent">
-          <div class="filescontainer" id="excelcontainer">
-            <div class="filesname">
-              <h3>Excel (.xlsx) Files</h3>
-              <i class="fa-regular fa-file-excel"></i>
-            </div>
-
-            <ul>
-              <li>
-                <div class="linkbox">
-                  <p>Sample Semester Layout Light Theme</p>
-                  <p>
-                    <!-- download attribute means they will download it -->
-                    Download:&nbsp;&nbsp;<a
-                      href="https://storage.googleapis.com/degreeview-ut/johna.andkatherineg.jacksonschoolofgeosciences/excel-files/generalgeology-bsgs-semesterfile.xlsx"
-                      download
-                      ><i class="fa-solid fa-arrow-up-from-bracket"></i
-                    ></a>
-                  </p>
-                </div>
-              </li>
-              <!--  -->
-              <li>
-                <div class="linkbox">
-                  <p>Sample Semester Layout Dark Theme</p>
-                  <p>
-                    <!-- download attribute means they will download it -->
-                    Download:&nbsp;&nbsp;<a
-                      href="https://storage.googleapis.com/degreeview-ut/johna.andkatherineg.jacksonschoolofgeosciences/excel-files/generalgeology-bsgs-semesterfile.xlsx"
-                      download
-                      ><i class="fa-solid fa-arrow-up-from-bracket"></i
-                    ></a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- files container is per file type. linkbox is per individiual link -->
-          <div class="filescontainer" id="pdfcontainer">
-            <div class="filesname">
-              <h3>PDF Files</h3>
-              <i class="fa-regular fa-file-pdf"></i>
-            </div>
-
-            <ul>
-              <!-- put the linkboxes in li tags for organization and readability -->
-              <li>
-                <div class="linkbox">
-                  <p>Sample Semester PDF</p>
-
-                  <p>
-                    View:&nbsp;&nbsp;
-                    <a
-                      href="https://storage.googleapis.com/degreeview-ut/johna.andkatherineg.jacksonschoolofgeosciences/pdfs/generalgeology-bsgs-semesterlayout.pdf"
-                      target="_blank"
-                      ><i class="fa-regular fa-eye"></i
-                    ></a>
-                  </p>
-                  <p>
-                    <!-- download attribute means they will download it -->
-                    Download:&nbsp;&nbsp;<a
-                      href="https://storage.googleapis.com/degreeview-ut/johna.andkatherineg.jacksonschoolofgeosciences/pdfs/generalgeology-bsgs-semesterlayout.pdf"
-                      download
-                      ><i class="fa-solid fa-arrow-up-from-bracket"></i
-                    ></a>
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <div class="linkbox">
-                  <p>Sample Semester PDF Empty Nodes</p>
-                  <p>
-                    View:&nbsp;&nbsp;
-                    <a
-                      href="https://storage.googleapis.com/degreeview-ut/johna.andkatherineg.jacksonschoolofgeosciences/pdfs/generalgeology-bsgs-semesterlayout_emptynodes.pdf"
-                      target="_blank"
-                      ><i class="fa-regular fa-eye"></i
-                    ></a>
-                  </p>
-                  <p>
-                    <!-- download attribute means they will download it -->
-                    Download:&nbsp;&nbsp;<a
-                      href="https://storage.googleapis.com/degreeview-ut/johna.andkatherineg.jacksonschoolofgeosciences/pdfs/generalgeology-bsgs-semesterlayout_emptynodes.pdf"
-                      download
-                      ><i class="fa-solid fa-arrow-up-from-bracket"></i
-                    ></a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="filescontainer" id="csvcontainer">
-            <div class="filesname">
-              <h3>CSV Files</h3>
-              <i class="fa-regular fa-file"></i>
-            </div>
-
-            <ul>
-              <li>
-                <div class="linkbox">
-                  <p>Major Courses CSV</p>
-
-                  <p>
-                    <!-- download attribute means they will download it -->
-                    Download:&nbsp;&nbsp;<a
-                      href="https://storage.googleapis.com/degreeview-ut/johna.andkatherineg.jacksonschoolofgeosciences/csvs/generalgeology-bsgs-courses.csv"
-                      download
-                      ><i class="fa-solid fa-arrow-up-from-bracket"></i
-                    ></a>
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <div class="linkbox">
-                  <p>Sample Semester Layout CSV</p>
-                  <p>
-                    <!-- download attribute means they will download it -->
-                    Download:&nbsp;&nbsp;<a
-                      href="https://storage.googleapis.com/degreeview-ut/johna.andkatherineg.jacksonschoolofgeosciences/csvs/generalgeology-bsgs-semestercsvfile.csv"
-                      download
-                      ><i class="fa-solid fa-arrow-up-from-bracket"></i
-                    ></a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="rightcontent">
-          <div class="displayedpdfnamebox">
-            <h3 id="displayedpdfname">Sample Semester Layout PDF</h3>
-          </div>
-          <div class="visuals">
-            <iframe
-              class="displayedpdf"
-              src="https://storage.googleapis.com/degreeview-ut/johna.andkatherineg.jacksonschoolofgeosciences/pdfs/generalgeology-bsgs-semesterlayout.pdf"
-              frameborder="0"
-              width="90%"
-              height="1000px"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-
       <div class="undermainsite">
-        <!-- this can be empty and like 20 px tall just to take up space, and be used for something in the future
-          -->
+        <!-- contains the rendered csv -->
+        <div class="renderedcsvdiv">
+          <h3 id="csvheading">General Geology (BSGS) Courses Table</h3>
+
+          <div class="copyanddownload">
+            <i class="fa-regular fa-copy" id="copyicon"></i>
+            <!-- have a modal or whatever its called popup from here.  -->
+            <a href=""><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+          </div>
+
+          <div id="csvtablecontainer"></div>
+        </div>
       </div>
 
       <footer>

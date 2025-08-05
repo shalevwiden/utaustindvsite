@@ -3,7 +3,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.35);
+    transform: scale(1.26);
   }
   100% {
     transform: scale(1);
@@ -26,6 +26,11 @@
 }
 /* for about.html */
 .icons a:hover {
+  cursor: pointer;
+  animation: scaleupless 1.2s ease 1 forwards;
+}
+
+.copyanddownload i:hover {
   cursor: pointer;
   animation: scaleupless 1.2s ease 1 forwards;
 }

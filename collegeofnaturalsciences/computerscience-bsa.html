@@ -36,6 +36,10 @@
 
         <!-- animation stylesheet -->
         <link rel="stylesheet" href="../cssfiles/animations.css" />
+
+        <!-- table styling -->
+        <link rel="stylesheet" href="../cssfiles/tablestyling.css" />
+
         <!-- Barlow Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -225,7 +229,7 @@
                                  <p>
                     View:&nbsp;&nbsp;
                     <a
-                      href="computerscience-bsa-renderedcsv.html"
+                      href="computerscience-bsa-rendered-csv.html"
                       target="_blank"
                       ><i class="fa-regular fa-eye"></i>
                     </a>
@@ -260,9 +264,9 @@
                 </div>
                 
  <div class="undermainsite">
-        < <!-- contains rendered csv -->
+        <!-- contains rendered csv -->
         <div class="renderedcsvdiv">
-          <h3 id="csvheading">Computer Science (BSA) Courses CSV</h3>
+          <h3 id="csvheading">Computer Science (BSA) Courses Table</h3>
           <div id="csvtablecontainer"></div>
         </div>
       </div>
@@ -294,6 +298,9 @@
 
                 <script src="../javascript_files/headingcolorchange.js"></script>
                 <!-- degreecsvrenderedscript in same html file-->
+
+                 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
                  <script src="../javascript_files/degreecsvrendered_samefile.js"></script>
                 </div>
                 </body>
