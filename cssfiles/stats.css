@@ -429,8 +429,9 @@ Begin left content stuff
 #csvtablecontainer {
   width: 90%;
   border-radius: 26px;
-  border: 5px solid #081a75;
+  /* border: 5px solid #081a75; */
   min-height: 100px;
+  overflow-x: auto;
 }
 
 #csvheading {
@@ -449,7 +450,7 @@ Begin left content stuff
 #csvtablecontainer table td,
 #csvtablecontainer table th {
   border: 1px solid #ccc;
-  padding: 15px 5px;
+  padding: 15px 9px;
   min-height: 40px;
 }
 /* style first row bold */
@@ -470,7 +471,7 @@ Begin left content stuff
 #csvtablecontainer table tr:first-child td:nth-of-type(6) {
   border-top-right-radius: 10px;
   padding-right: 10px;
-  color: #ff731f;
+  /* color: #ff731f; */
 }
 
 #csvtablecontainer table tr:last-child td:nth-of-type(1) {

@@ -186,6 +186,12 @@ Above mainsite and its children
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  transition: background-color 0.4s border 0.1s;
+}
+
+.schoolist-column a:hover {
+  background-color: #bf5701;
+  border: 2px solid white;
 }
 /* this div contains all the a's */
 .schoolnamediv {

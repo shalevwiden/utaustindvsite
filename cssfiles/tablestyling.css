@@ -18,6 +18,12 @@
   padding: 15px 9px;
   min-height: 40px;
 }
+
+/* delete 2nd row */
+
+#csvtablecontainer table tr:nth-of-type(2) {
+  display: none;
+}
 /* style first row bold */
 #csvtablecontainer table tr:first-child td {
   font-weight: bold;
@@ -109,6 +115,12 @@ tr:nth-child(even) {
   padding: 15px 9px;
   min-height: 40px;
 }
+
+/* delete 2nd row */
+
+#semester-csvtablecontainer table tr:nth-of-type(2) {
+  display: none;
+}
 /* style first row bold */
 #semester-csvtablecontainer table tr:first-child td {
   font-weight: bold;
@@ -141,6 +153,9 @@ tr:nth-child(even) {
   border-collapse: separate;
 }
 #semester-csvtablecontainer table tr:nth-of-type(3) td {
+  /* this is the subheading row */
+  font-size: 17px;
+
   font-weight: bold;
 }
 /* change alignment */
@@ -174,6 +189,9 @@ th:nth-child(5) {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+tr:nth-child(odd) {
+  background-color: #fafafa;
+}
 
 /* style Degreeview Logo */
 
@@ -186,5 +204,13 @@ tr:nth-child(even) {
   font-family: "Barlow";
   font-weight: 600;
   font-size: 30px;
-  text-align: center;
+  text-align: left;
+}
+
+#semester-csvtablecontainer table tr:last-child td:last-child {
+  visibility: hidden;
+}
+
+.dummytd {
+  background-color: yellow;
 }

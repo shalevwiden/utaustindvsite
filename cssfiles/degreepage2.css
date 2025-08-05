@@ -346,17 +346,18 @@ Begin left content stuff
   color: #284dbc;
   font-size: 26px;
   margin: 19px;
+  margin-bottom: 6px;
 }
 .copyanddownload {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 10px;
-  column-gap: 10px;
+  column-gap: 19px;
   height: 50px;
-  border: 1px solid black;
+
   width: 90%;
-  margin: -20px 0px;
+  margin: -20px 0px -14px 0px;
 }
 /* add share icon in the future */
 
@@ -375,6 +376,7 @@ Begin left content stuff
   padding: 0px;
   min-height: 100px;
   height: auto;
+  overflow-x: auto;
 }
 /* all table styling is in tablestyling.css  */
 

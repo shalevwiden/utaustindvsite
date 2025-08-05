@@ -31,3 +31,25 @@ window.addEventListener("DOMContentLoaded", async () => {
     console.error("CSV load error:", err);
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("running dummy td script");
+
+  const table = document.querySelector("#semester-csvtablecontainer table");
+  if (!table) return;
+
+  const interval = setInterval(() => {
+    const firstRow = table.querySelector("tr");
+    if (firstRow) {
+      clearInterval(interval);
+
+      // Create a new dummy cell
+      const dummyTd = document.createElement("td");
+      dummyTd.classList.add("dummytd");
+      console.log("Created dummy td");
+
+      // Add it to the first row
+      firstRow.appendChild(dummyTd);
+    }
+  }, 100); // Check every 100ms
+});
