@@ -219,8 +219,6 @@ tr:nth-child(odd) {
   #csvtablecontainer table td {
     width: 95%;
     padding: 15px 4px;
-  }
-  #csvtablecontainer table td {
     font-size: 15.5px;
   }
 
@@ -238,9 +236,7 @@ tr:nth-child(odd) {
   #semester-csvtablecontainer table td {
     width: 95%;
     padding: 15px 4px;
-  }
-  #semester-csvtablecontainer table td {
-    font-size: 15.5px;
+    font-size: 15px;
   }
 
   /* make the logo box smaller */
