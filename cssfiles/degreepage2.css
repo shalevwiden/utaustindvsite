@@ -377,6 +377,7 @@ Begin left content stuff
   min-height: 100px;
   height: auto;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
 }
 /* all table styling is in tablestyling.css  */
 
@@ -595,6 +596,11 @@ Mobile Screens
 
   .leftcontent {
     padding: 25px 10px;
+  }
+
+  #csvheading {
+    /* add more spacing */
+    margin-bottom: 50px;
   }
 
   #pdfcontainer .linkbox,

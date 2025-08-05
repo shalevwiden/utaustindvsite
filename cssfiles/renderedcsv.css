@@ -14,6 +14,7 @@
   min-height: 100px;
   height: auto;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
 }
 /* yeah so I just copy pasted the entire degreepage2 css and slightly modified the heading text instead of redoing  */
 /* degreename stuff */
@@ -452,8 +453,8 @@ footer a:hover {
 
 @media screen and (min-width: 700px) and (max-width: 1272px) {
   #degreenametitle {
-    font-size: clamp(40px, 9.5vw, 43px);
-    color: #060212;
+    font-size: clamp(32px, 7.5vw, 35px);
+    color: #284dbc;
   }
 
   .leftcontent {
@@ -551,8 +552,8 @@ Mobile Screens
     padding-left: 10px;
   }
   #degreenametitle {
-    font-size: 35px;
-    color: #060212;
+    font-size: 30px;
+    color: #284dbc;
   }
   .topnav {
     display: flex;
@@ -589,7 +590,19 @@ Mobile Screens
     padding-left: 30px;
     padding-right: 10px;
   }
+  .breadcrumbs ul li a {
+    color: #081a75;
+    font-size: 13.5px;
+  }
+
+  .breadcrumbs #current {
+    /* this is the current page the user is on */
+    font-size: 13.5px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
   /* 
+  
   
 
   
@@ -625,16 +638,43 @@ Mobile Screens
 
 /* even smaller screensizes here */
 @media screen and (max-width: 550px) {
-  .breadcrumbs ul li a {
+  .abovemainsite {
+    display: flex;
+    flex-direction: column;
+    /* more height to allow both title and breadcrumbs to be seen */
+
+    /* bigger height as well for the bigger topnav */
+    height: 265px;
+  }
+
+  .degreenamebox {
+    height: 190px;
+    width: 100%;
+    flex: none;
+    padding-bottom: 25px;
+    padding-left: 10px;
+  }
+  #degreenametitle {
+    font-size: 30px;
+    color: #284dbc;
+  }
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    /* height larger to have both on top of each other */
+    height: 75px;
+    /* removed the fixed navbar */
+    filter: none;
+  }
+  .homeandabout .breadcrumbs ul li a {
     color: #081a75;
     font-size: 14px;
   }
 
-  .breadcrumbs #current {
-    /* this is the current page the user is on */
-    font-size: 14px;
-    font-weight: bold;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  .breadcrumbs {
+    height: 80px;
+
+    display: none;
   }
 }
 
@@ -665,10 +705,6 @@ Mobile Screens
     flex: none;
     padding-bottom: 25px;
     padding-left: 35px;
-  }
-  #degreenametitle {
-    font-size: 35px;
-    color: #060212;
   }
   .topnav {
     display: flex;

@@ -23,6 +23,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100vw;
 
   /* crazy filters to apply */
 
@@ -273,14 +274,12 @@ still in top nav, but now the homeandabout section
 }
 .statstitle {
   font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+
   width: 100%;
   padding: 22px 10px 22px 22px;
 }
 
+/* end general stats styling, now specific for certain boxes */
 #longestnamebox {
   width: 350px;
   height: 200px;
@@ -293,6 +292,7 @@ still in top nav, but now the homeandabout section
 
 #longestnamebox .statstitle {
   margin-top: 5px;
+  font-size: 20px;
 }
 #shortestnamebox {
   width: 300px;
@@ -303,8 +303,66 @@ still in top nav, but now the homeandabout section
   padding: 20px;
   align-items: flex-start;
 }
-#disclaimer {
-  margin-top: 200px;
+
+#shortestnamebox .statstitle {
+  font-size: 20px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+/* now the longest and shortest courses */
+
+#longestcoursebox {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#longestcoursebox .statscontent {
+  font-size: 20px;
+  padding: 20px;
+  padding-top: 35px;
+}
+
+#longestcoursebox .statstitle {
+  margin-top: 5px;
+  font-size: 18px;
+
+  width: 100%;
+  padding: 25px 10px 22px 22px;
+}
+#shortestcoursebox {
+  width: 300px;
+}
+
+#shortestcoursebox .statscontent {
+  font-size: 22px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+#shortestcoursebox .statstitle {
+  font-size: 18px;
+  padding: 20px;
+  align-items: flex-start;
+}
+.topstats sup {
+  font-size: 11px;
+}
+
+.footnotes {
+  display: flex;
+  width: 100%;
+  /* border: 3px solid black; */
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -32px;
+  margin-bottom: -23px;
+}
+.rightfootnotes {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
 }
 /*
 Begin left content stuff
@@ -432,6 +490,7 @@ Begin left content stuff
   /* border: 5px solid #081a75; */
   min-height: 100px;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
 }
 
 #csvheading {
@@ -872,22 +931,12 @@ Mobile Screens
 
   .topstats {
     /* this is the top one */
-    width: 100%;
-    background-color: #ff7731;
-    border-radius: 26px;
-    padding: 30px 15px;
-    font-family: Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    display: flex;
-    flex-direction: row;
 
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 30px 15px;
+    font-size: 18px;
 
     row-gap: 35px;
-    height: auto;
+
     min-height: 300px;
   }
 
@@ -896,6 +945,25 @@ Mobile Screens
   }
   .statstitle {
     font-size: 18px;
+  }
+  #csvtablecontainer {
+    width: 95%;
+  }
+
+  #csvtablecontainer table td {
+    width: 95%;
+    padding: 15px 4px;
+  }
+  #csvtablecontainer table td {
+    font-size: 14px;
+  }
+
+  #csvtablecontainer table tr:last-child td:first-child {
+    font-weight: bold;
+    color: #0c48a5;
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 20px !important;
   }
 }
 
