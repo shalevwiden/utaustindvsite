@@ -254,6 +254,9 @@ still in top nav, but now the homeandabout section
   column-gap: 25px;
   /* this was that icon stuff I was trying to find */
   width: 100%;
+
+  display: none;
+  /* for now */
 }
 
 .icons a .fa-linkedin {
@@ -266,6 +269,9 @@ still in top nav, but now the homeandabout section
   width: 30px;
   height: 30px;
   fill: #ff7731; /* for SVG */
+
+  /* remove it for now: */
+  display: none;
 }
 /* 
 Begin left content stuff
