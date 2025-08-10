@@ -17,9 +17,9 @@ Built over the course of July 2025.
 
 <br>
 
-There are also animations, 3 types:
+There are also animations on the rendered tables.
+Currently only one, and up down animation. But in the future I can see:
 
-One that scales up and goes down.
 One that moves side to side like a wave.
 
 And one that does some random crazy stuff.
