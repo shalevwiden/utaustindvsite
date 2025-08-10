@@ -16,3 +16,10 @@ In addition sheet.js is used briefly on the stats page to facilitate rendering a
 Built over the course of July 2025.
 
 <br>
+
+There are also animations, 3 types:
+
+One that scales up and goes down.
+One that moves side to side like a wave.
+
+And one that does some random crazy stuff.

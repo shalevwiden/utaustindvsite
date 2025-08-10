@@ -108,6 +108,12 @@ tr:nth-child(even) {
   margin-bottom: 20px;
   width: 100%;
 }
+/* for aniamtions
+
+*/
+#semester-csvtablecontainer table tr {
+  /* transition: font-size calc(var(--order) * 300ms) ease; */
+}
 
 #semester-csvtablecontainer table td,
 #semester-csvtablecontainer table th {
@@ -146,7 +152,7 @@ tr:nth-child(even) {
 #semester-csvtablecontainer table tr:last-child td:nth-of-type(1) {
   border-bottom-left-radius: 10px;
 }
-#semester-csvtablecontainer table tr:last-child td:nth-of-type(4) {
+#semester-csvtablecontainer table tr:last-child td:nth-of-type(5) {
   border-bottom-right-radius: 10px;
   border: 1px solid #ccc;
 
@@ -208,7 +214,7 @@ tr:nth-child(odd) {
 }
 
 #semester-csvtablecontainer table tr:last-child td:last-child {
-  visibility: hidden;
+  color: transparent;
 }
 
 .dummytd {

@@ -1,14 +1,12 @@
-
-                    <!DOCTYPE html>
-                    <html lang="en">
-                    
-<head>
- <meta
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
       name="description"
       content="Visualize Social Work (BSW) at UT Austin through diagrams and tabular data."
     />
 
-     <meta
+    <meta
       name="keywords"
       content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, Social Work (BSW)"
     />
@@ -16,61 +14,63 @@
     <meta name="author" content="DegreeView" />
 
     <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-         <!-- favicon icon -->
-         <link rel="icon" href="../metaassets/site_favicon.png" type="image/png" />
-         <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"></script>
+    <!-- favicon icon -->
+    <link rel="icon" href="../metaassets/site_favicon.png" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-S06MYR1FV6');
-</script>
-        <title>Social Work (BSW) Rendered CSV Page - DegreeView</title>
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+    <title>Social Work (BSW) Rendered CSV Page - DegreeView</title>
 
-        <!-- main stylesheet -->
-        <link rel="stylesheet" href="../cssfiles/degreepage2.css" />
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../cssfiles/degreepage2.css" />
 
-        <!-- animation stylesheet -->
-        <link rel="stylesheet" href="../cssfiles/animations.css" />
+    <!-- animation stylesheet -->
+    <link rel="stylesheet" href="../cssfiles/animations.css" />
 
+    <!-- table styling -->
+    <link rel="stylesheet" href="../cssfiles/tablestyling.css" />
 
-        <!-- table styling -->
-        <link rel="stylesheet" href="../cssfiles/tablestyling.css" />
+    <!-- Rendered CSV css -->
 
-        <!-- Rendered CSV css -->
+    <link rel="stylesheet" href="../cssfiles/renderedcsv.css" />
 
-        <link rel="stylesheet" href="../cssfiles/renderedcsv.css">
+    <!-- Barlow Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- Barlow Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons ( download icon and file icons from here is used) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
 
-        <!-- Roboto Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet"
-        />
-        <!-- Icons ( download icon and file icons from here is used) -->
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        />
-        </head>
-
-
-
-                                        
-                <body>       
-                <div class="sitecontainer">
-                
-
+  <body>
+    <div class="sitecontainer">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
@@ -78,7 +78,11 @@
               <li><a href="../index.html">DegreeView UT</a></li>
               <i class="fa fa-chevron-right"></i>
 
-              <li><a href="stevehicksschoolofsocialwork.html">Steve Hicks School of Social Work</a></li>
+              <li>
+                <a href="stevehicksschoolofsocialwork.html"
+                  >Steve Hicks School of Social Work</a
+                >
+              </li>
               <i class="fa fa-chevron-right"></i>
 
               <li>
@@ -92,7 +96,6 @@
           </nav>
           <nav class="homeandabout">
             <ul>
-              
               <li><a href="../index.html">Home</a></li>
               <li><a href="../aboutpage.html">About</a></li>
               <li><a href="../ut-stats.html">Stats</a></li>
@@ -100,39 +103,38 @@
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">
-           Social Work (BSW) Semester Table
-          </h1>
+          <h1 id="degreenametitle">Social Work (BSW) Semester Table</h1>
         </div>
       </div>
 
-                
- 
       <div class="undermainsite">
         <!-- contains the rendered csv -->
         <div class="renderedcsvdiv">
-
           <div class="copyanddownload">
+            <div class="animatetable">
+              <button id="animatebutton">Animate</button>
+            </div>
+
             <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
-                    <!-- contains the rendered csv -->
-                <a href="https://storage.googleapis.com/degreeview-ut/stevehicksschoolofsocialwork/csvs/socialwork-bsw-semestercsvfile.csv"
-                id="downloadcsv"
-
+            <!-- contains the rendered csv -->
+            <a
+              href="https://storage.googleapis.com/degreeview-ut/stevehicksschoolofsocialwork/csvs/socialwork-bsw-semestercsvfile.csv"
+              id="downloadcsv"
             >
-                        <!-- use this id to get the href to place into the javascript script to render with sheet js  -->
+              <!-- use this id to get the href to place into the javascript script to render with sheet js  -->
 
-            <i class="fa-solid fa-arrow-up-from-bracket" title="downloadcsv"></i
+              <i
+                class="fa-solid fa-arrow-up-from-bracket"
+                title="downloadcsv"
+              ></i
             ></a>
           </div>
 
           <div id="semester-csvtablecontainer"></div>
         </div>
-    </div>
+      </div>
 
-
-            
-                
-         <footer>
+      <footer>
         <div class="footerleft">
           <div class="links">
             <a href="../index.html">About</a>
@@ -151,25 +153,21 @@
         </div>
       </footer>
 
+      <!-- Hover Script -->
 
+      <script src="../javascript_files/headingcolorchange.js"></script>
 
-                <!-- Hover Script -->
+      <!-- Sheet JS Script -->
 
-                <script src="../javascript_files/headingcolorchange.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
-                <!-- Sheet JS Script -->
+      <script src="../javascript_files/degreecsvrendered.js"></script>
 
-                 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+      <!-- copy script -->
+      <script src="../javascript_files/copytable.js"></script>
 
-                <script src="../javascript_files/degreecsvrendered.js"></script>
-
-                <!-- copy script -->
-                <script src="../javascript_files/copytable.js"></script>
-
-                </div>
-                </body>
-
-
-
-                    
-                    </html>
+      <!-- animate table script -->
+      <script src="../javascript_files/animatetable.js"></script>
+    </div>
+  </body>
+</html>

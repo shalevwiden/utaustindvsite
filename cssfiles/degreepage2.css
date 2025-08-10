@@ -227,6 +227,14 @@ Begin left content stuff
   row-gap: 25px;
 }
 
+.linksvg {
+  /* filter: invert(100%) brightness(200%); */
+  width: 20px;
+  height: auto;
+  position: absolute;
+  margin-top: 0px;
+}
+
 .filescontainer {
   border: 4px dashed rgb(16, 11, 82);
   border-radius: 26px;
@@ -361,6 +369,28 @@ Begin left content stuff
 }
 /* add share icon in the future */
 
+#animatebutton {
+  border: 1px solid rgb(35, 44, 116);
+  color: white;
+  background-color: #153f66;
+  width: 75px;
+  padding: 0px 6px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.5s;
+}
+
+#animatebutton:hover {
+  cursor: pointer;
+  background-color: #fdfbfa;
+  color: #153f66;
+
+  border: 3px solid rgb(15, 29, 89);
+}
+
 .copyanddownload i {
   font-size: 28px;
   color: rgb(21, 21, 69);
@@ -478,6 +508,11 @@ footer a:hover {
   .linkbox p:first-of-type {
     margin-top: 26px;
     font-weight: bold;
+  }
+
+  #csvheading {
+    margin: 19px;
+    margin-bottom: 35px;
   }
 }
 

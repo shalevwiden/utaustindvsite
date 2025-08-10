@@ -63,3 +63,81 @@ footer #smalllogo:hover {
   cursor: pointer;
   animation: scaleandspin 2.6s ease 1 forwards;
 }
+
+@keyframes shiftleft {
+  0% {
+    transform: translateX(0px);
+    transform: scale(1);
+  }
+  25% {
+    transform: translateX(50px) scale(1.3);
+    color: lightskyblue;
+  }
+  /* 
+  40% {
+    transform: translateX(25px);
+    color: lightskyblue;
+  } */
+
+  50% {
+    transform: translateX(0px);
+    color: rgb(77, 158, 208);
+  }
+  /*   
+  60% {
+    transform: translateX(-25px);
+    color: lightskyblue;
+  } */
+  /* 
+  70% {
+    transform: translateX(-50px);
+    color: lightskyblue;
+  } */
+
+  75% {
+    transform: translateX(-50px);
+    color: lightskyblue;
+    background-color: aquamarine;
+  }
+  /* 
+  80% {
+    transform: translateX(-25px);
+    color: lightskyblue;
+  }
+
+  90% {
+    transform: translateX(-10px);
+    color: lightskyblue;
+  } */
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+/* I should also add spans around each word so I can animate columns as well.  */
+
+.tableanimationforwards {
+  /* custom curve */
+  /* get this two seconds value in javascript */
+  animation: shiftleft 2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+  animation-delay: calc(var(--order) * 300ms);
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+
+  50% {
+    transform: translateY(20px) scale(1);
+    background-color: rgb(182, 227, 255);
+    font-size: 20px;
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+.tableanimationupdown {
+  animation: updown 2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+  animation-delay: calc(var(--order) * 300ms);
+}
