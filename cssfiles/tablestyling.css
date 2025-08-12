@@ -72,8 +72,7 @@ th:nth-child(3) {
   text-align: center;
 }
 
-td:nth-child(5),
-th:nth-child(5) {
+#csvtablecontainer td:nth-child(5) {
   display: none;
 }
 
@@ -142,11 +141,10 @@ tr:nth-child(even) {
   border-top-left-radius: 10px;
   padding-left: 10px;
 }
-#semester-csvtablecontainer table tr:first-child td:nth-of-type(5) {
+#semester-csvtablecontainer table tr:first-child td:nth-of-type(6) {
   border-top-right-radius: 10px;
+
   padding-right: 15px;
-  background-color: yellow;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #semester-csvtablecontainer table tr:last-child td:nth-of-type(1) {
@@ -188,7 +186,8 @@ th:nth-child(3) {
 
 #semester-csvtablecontainer td:nth-child(5),
 th:nth-child(5) {
-  display: none;
+  /* this would remove the schoolname normally */
+  /* display: none; */
 }
 
 /* alternating bcg for lines */
