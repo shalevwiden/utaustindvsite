@@ -253,6 +253,7 @@ still in top nav, but now the homeandabout section
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  display: none;
 }
 
 .platformscontainer p {
