@@ -218,13 +218,14 @@ Begin left content stuff
   /* this affects the width */
   flex: 40%;
   background-color: #ffffff;
-  padding: 10px;
+  padding: 15px;
   padding-top: 80px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  row-gap: 25px;
+  row-gap: 35px;
 }
 
 .linksvg {

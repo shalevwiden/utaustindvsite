@@ -30,6 +30,12 @@
   animation: scaleupless 1.2s ease 1 forwards;
 }
 
+.substackcontainer a .bi-substack:hover {
+  animation: scaleupless 1.2s ease 1 forwards;
+
+  /* remove it for now: */
+}
+
 .copyanddownload i:hover {
   cursor: pointer;
   animation: scaleupless 1.2s ease 1 forwards;
