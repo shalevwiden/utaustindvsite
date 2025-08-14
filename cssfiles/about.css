@@ -222,8 +222,8 @@ still in top nav, but now the homeandabout section
   margin-top: 50px;
   border: 3px solid var(--secondarynavy);
   border-radius: 26px;
-  width: 80%;
-  padding: 20px;
+  width: 90%;
+  padding: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
