@@ -1,85 +1,9 @@
 /* Idea for this one:
 Basically everything is flex. To make it responsive switch direction from flex row to flex column
 */
-.schoolist-ul {
-  width: 90%;
-  height: auto;
-  background-color: #eee;
-  list-style-type: none;
-  padding: 45px 35px;
-  border-radius: 26px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  /* 1/3 width for each column. Use media quieries to change width */
-  /* finish this later */
-}
-.schoolist-ul .schoolist-column {
-  /*  add padding too */
-  /* regenerate the  */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.schoolist-ul .schoolist-column a {
-  background-color: #ff7731;
-  width: 100%;
-  height: 190px;
-  border-radius: 25px;
-  padding: 25px 30px 30px 40px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  transition: background-color 0.4s border 0.4s;
-}
-.schoolist-ul .schoolist-column a .schoolnamediv {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 25px;
-}
-.schoolist-ul .schoolist-column a:hover {
-  background-color: #bf5701;
-  border: 2px solid white;
-}
-@media (min-width: 1000px) {
-  .schoolist-ul {
-    /* this is the width that it will be 3 columns until */
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 550px) {
-  .schoolist-ul {
-    grid-template-columns: repeat(1, 90%);
-    justify-content: center;
-  }
-  .schoolist-ul .schoolist-column a {
-    padding: 25px 15px 30px 18px;
-  }
-  .schoolist-ul .schoolist-column a .schoolnamediv {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 550px) and (max-width: 375px) {
-  .schoolist-ul .schoolist-column a .schoolnamediv {
-    word-break: break-all;
-  }
-}
-/* this div contains all the a's */
+
+@use "/Users/shalevwiden/Downloads/Projects/dvschoolsites/texas/utaustin-site/src/scss/schoolist/_schoolist.scss"
+  as *;
 *,
 *::before,
 *::after {
@@ -93,24 +17,33 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   /* crazy filters to apply */
+
   /* filter: invert(100%); */
+
   /* filter: grayscale(50%); */
+
   filter: contrast(110%);
+
   /* filter: blur(3px); */
+
   filter: saturate(110%);
 }
 
 /* 
 
 This is all nav bar stuff:*/
+
 /* end nav bar stuff */
+
 .sitecontainer {
   min-height: 100vh;
   width: 100%;
@@ -123,16 +56,18 @@ This is all nav bar stuff:*/
 /* 
 Above mainsite and its children
 */
+
 .abovemainsite {
   display: flex;
   flex-direction: column;
+
   width: 100%;
   height: 270px;
 }
-
 /* topnav beginning */
 .topnav {
   /* change this color to see it and make changes */
+
   background-color: #dce2e6;
   width: 100%;
   height: 60px;
@@ -153,7 +88,6 @@ Above mainsite and its children
   align-items: center;
   justify-content: center;
 }
-
 .biglogo {
   /* height the same as topnav here, 100px */
   height: 70%;
@@ -168,8 +102,10 @@ Above mainsite and its children
 /* now outside o
 
 /* now done with above main site... */
+
 /* mainsite will be the name, plus some of the files, plus some images. But there can be stuff below it in, Since sitecontainer is flex column  */
 /* index code */
+
 .mainsite {
   display: flex;
   flex-direction: column;
@@ -177,13 +113,16 @@ Above mainsite and its children
   justify-content: center;
   row-gap: 55px;
   width: 100%;
+
   padding: 40px 30px;
+
   flex: 1 1 600px;
   border-top: 10px solid #153f66;
 }
 
 .introbox {
   width: 90%;
+
   border: 5px black dashed;
   border-radius: 26px;
   padding: 30px 35px;
@@ -204,8 +143,8 @@ Above mainsite and its children
   align-items: center;
   justify-content: center;
 }
-
 /* this is the ul */
+
 /* 
 
 Begin left content stuff
@@ -232,34 +171,32 @@ Begin left content stuff
   height: 80px;
   width: 100%;
 }
-
 .schoollistbox {
   border: 4px solid rgb(164, 12, 12);
   border-radius: 26px;
   width: calc(100% - 80px);
   padding: 20px 10px 20px 40px;
 }
-
 .schoollistbox ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+
   /* control paddig in the schoollistbox instead, its easier */
   padding: 0;
 }
-
 .schoollink {
   list-style-type: none;
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
+
   font-weight: bold;
 }
-
 .schoollink a {
   text-decoration: none;
   color: white;
@@ -270,6 +207,7 @@ Begin left content stuff
   filter: invert(100%) brightness(200%);
   width: 20px;
   height: auto;
+
   margin-top: 6px;
 }
 
@@ -285,21 +223,19 @@ Begin left content stuff
 .filescontainer h3 {
   color: #284dbc;
 }
-
 .filescontainer ul {
   list-style-type: none; /* Removes bullets */
   /* indent */
   padding-left: 30px;
 }
-
 .linkbox {
   display: flex;
   flex-direction: row;
   /* make the download text all even */
   justify-content: space-between;
+
   align-items: center;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
 }
 
 /* this changes the styling on the names of the file like "Sample Semester PDF */
@@ -369,8 +305,7 @@ Begin left content stuff
   width: 100%;
   height: 100%;
   align-items: center;
-  -moz-column-gap: 90px;
-       column-gap: 90px;
+  column-gap: 90px;
   /* since doing space evenly, remove gap */
   justify-content: center;
   list-style-type: none;
@@ -386,6 +321,7 @@ Begin left content stuff
   justify-content: center;
   transition: background-color 0.3s, color 0.3s;
   background-color: #153f66;
+
   border-radius: 35px;
   padding: 20px;
 }
@@ -402,6 +338,7 @@ Begin left content stuff
   font-weight: bold;
   /* nice font when bolded */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
   /* make the whole li box clickable */
   display: flex;
   align-items: center;
@@ -418,38 +355,40 @@ Begin left content stuff
 #randompagebutton:hover {
   background-color: #fdfbfa;
   color: #153f66;
+
   border: 5px solid rgb(15, 29, 89);
   border-radius: 25px;
 }
 
 /* end under main site */
+
 footer {
   height: 120px;
   width: 100%;
-  background-color: rgba(0, 24, 75, 0.4549019608);
+  background-color: #00184b74;
   color: White;
+
   padding: 20px;
   font-size: 16px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+
+  column-gap: 30px;
+
   font-family: Helvetica, sans-serif;
 }
-
 footer .links {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  -moz-column-gap: 35px;
-       column-gap: 35px;
+  column-gap: 35px;
   font-size: 19px;
 }
-
 .footerleft {
   display: flex;
   flex-direction: column;
@@ -457,14 +396,13 @@ footer .links {
   justify-content: center;
   row-gap: 15px;
 }
-
 .footerleft #statement {
   font-family: "Barlow", sans-serif;
+
   font-size: 25px;
   margin: 0;
   font-weight: 700;
 }
-
 footer #smalllogo {
   /* animation has been added in animations.css  */
   width: 55px;
@@ -472,9 +410,9 @@ footer #smalllogo {
   border-radius: 10px;
   border: 3px solid #081a75;
 }
-
 .barlowtest {
   font-family: "Barlow", sans-serif;
+
   font-size: 25px;
   margin: 0;
   font-weight: 600;
@@ -488,7 +426,6 @@ footer a {
   font-style: normal;
   text-decoration: none;
 }
-
 footer a:hover {
   text-decoration: underline;
   text-decoration-thickness: 4px;
@@ -497,12 +434,14 @@ footer a:hover {
 }
 
 /* beginning of all the media quieries */
+
 @media screen and (min-width: 700px) and (max-width: 1272px) {
   #headingtitle {
     font-size: 45px;
     color: #060212;
   }
 }
+
 @media screen and (max-width: 1135px) {
   .abovemainsite {
     display: flex;
@@ -510,6 +449,7 @@ footer a:hover {
     /* more height to allow both title and breadcrumbs to be seen */
     height: 270px;
   }
+
   .headingbox {
     flex-grow: 0;
     flex-shrink: 0;
@@ -528,14 +468,15 @@ footer a:hover {
     justify-content: space-between;
     /* top nav currently 250px */
   }
+
   /* for the home_random_stats stuff */
   .middlenav {
     width: 90%;
   }
   .home_random_stats ul {
-    -moz-column-gap: 60px;
-         column-gap: 60px;
+    column-gap: 60px;
   }
+
   /* theres already padding here from the originally declared style */
 }
 /* 
@@ -548,10 +489,12 @@ Mobile Screens
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
+
     /* bigger height as well for the bigger topnav */
     /* add the 2px for the border bottom */
     height: 272px;
   }
+
   .topnav {
     background-color: #dce2e6;
     width: 100%;
@@ -566,10 +509,13 @@ Mobile Screens
   .middlenav {
     width: 90%;
     /* 300 px plus gap of 30 for 3 */
+
     height: 390px;
   }
+
   .home_random_stats {
     /* bring it to the top */
+
     width: 100%;
   }
   .home_random_stats ul {
@@ -585,25 +531,29 @@ Mobile Screens
   .biglogobox {
     background-color: #fff;
     width: 100%;
+
     height: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
     /*  */
   }
+
   .biglogo {
     height: 65%;
     width: auto;
   }
   /* 
+  
 
-
-
+  
    this one here is pretty important */
   .mainsite {
     flex-direction: column;
   }
+
   .platformsbox {
     width: 40%;
     min-width: 200px;
@@ -613,13 +563,13 @@ Mobile Screens
     font-weight: 600;
     font-size: 16px;
   }
+
   .icons {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    -moz-column-gap: 15px;
-         column-gap: 15px;
+    column-gap: 15px;
     /* this was that icon stuff I was trying to find */
     width: 100%;
   }
@@ -637,15 +587,18 @@ Mobile Screens
     fill: #ff7731; /* for SVG */
   }
 }
+
 /* even smaller screensizes here */
 @media screen and (max-width: 550px) {
   .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
+
     /* bigger height as well for the bigger topnav */
     height: 220px;
   }
+
   .topnav {
     background-color: #dce2e6;
     width: 100%;
@@ -663,6 +616,7 @@ Mobile Screens
     height: 160px;
     /*  */
   }
+
   .biglogo {
     height: 70%;
     width: auto;
@@ -679,18 +633,22 @@ Mobile Screens
     z-index: 999;*/
   }
 }
+
 @media screen and (max-width: 450px) {
   .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
+
     /* bigger height as well for the bigger topnav */
-    height: 220px;
+    height: calc(220px);
   }
+
   .biglogo {
     height: 65%;
     width: auto;
   }
+
   .topnav {
     background-color: #dce2e6;
     width: 100%;
@@ -705,4 +663,4 @@ Mobile Screens
     height: 65px;
     width: 100%;
   }
-}/*# sourceMappingURL=index.css.map */
+}
