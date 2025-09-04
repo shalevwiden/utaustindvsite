@@ -35,10 +35,10 @@
     <title>DegreeView Stats</title>
 
     <!-- main stylesheet -->
-    <link rel="stylesheet" href="cssfiles/utstats.css" />
+    <link rel="stylesheet" href="utaustin-site/static/css/statspage.css" />
 
     <!-- animation stylesheet -->
-    <link rel="stylesheet" href="cssfiles/animations.css" />
+    <link rel="stylesheet" href="utaustin-site/cssfiles/animations.css" />
 
     <!-- Barlow Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -63,7 +63,9 @@
 
     <!-- this is just testing -->
 
-    <link rel="stylesheet" href="cssfiles/filterchaos.css" />
+    <link rel="stylesheet" href="utaustin-site/cssfiles/filterchaos.css" />
+
+    <link rel="stylesheet" href="utaustin-site/static/css/footer.css" />
   </head>
   <body>
     <!-- this div basically has the entire site in it. Flex direction column -->
@@ -74,7 +76,11 @@
       <div class="abovemainsite">
         <div class="topnav">
           <div class="biglogobox">
-            <img class="biglogo" src="metaassets/logo5.png" alt="" />
+            <img
+              class="biglogo"
+              src="utaustin-site/metaassets/logo5.png"
+              alt=""
+            />
           </div>
           <nav class="homeandabout">
             <ul>
@@ -93,6 +99,10 @@
       <div class="mainsite">
         <div class="topstats">
           <div class="statsbox">
+            <div class="statscontent"><p>11,097</p></div>
+            <div class="statstitle">Courses at UT <sup>1 </sup></div>
+          </div>
+          <div class="statsbox">
             <div class="statscontent"><p>4.691</p></div>
             <div class="statstitle">Average classes per semester</div>
           </div>
@@ -100,12 +110,6 @@
             <div class="statscontent"><p>47.13%</p></div>
             <div class="statstitle">
               Average % of Major Classified Hours / <br />Total Hours
-            </div>
-          </div>
-          <div class="statsbox">
-            <div class="statscontent"><p>27</p></div>
-            <div class="statstitle">
-              Degree Plans with more than 8 semesters
             </div>
           </div>
 
@@ -121,38 +125,34 @@
           </div>
           <div class="statsbox" id="longestcoursebox">
             <div class="statscontent">
-              Introduction to Speech and Language Disorders Assessment and
-              Treatment in Children
+              Northern Gods, Northern Faiths: The Conversion of Scandinavians,
+              Finns, Northern Slavs and Shamans
             </div>
             <div class="statstitle">
               Longest Coursename<sup>1, </sup><sup>2</sup><br /><span
                 style="margin-top: 6px; display: inline-block"
                 class="char"
-                >82 chars</span
+                >100 chars</span
               >
             </div>
           </div>
-          <div class="statsbox" id="shortestcoursebox">
-            <div class="statscontent">Statics</div>
+          <div class="statsbox">
+            <div class="statscontent"><p>GSD 361G</p></div>
+            <div class="statstitle">Coursecode of longest coursename</div>
+          </div>
+          <div class="statsbox">
+            <div class="statscontent">Bias</div>
             <div class="statstitle">
-              Shortest Coursename <sup>1, </sup><sup>2</sup><br /><span
+              Shortest Coursename <br /><span
                 style="margin-top: 6px; display: inline-block"
                 class="char"
-                >7 chars</span
+                >4 chars</span
               >
             </div>
           </div>
-        </div>
-        <div class="footnotes">
-          <div class="rightfootnotes">
-            <p>
-              1. Only includes courses on the suggested arrangement of courses
-              pages. Doesn't include the entire course catalog.
-            </p>
-            <p>
-              2.Refers to specific coursename. For example "track" is not
-              included as it is not a full coursename.
-            </p>
+          <div class="statsbox">
+            <div class="statscontent"><p>CGS 365</p></div>
+            <div class="statstitle">Coursecode of shortest coursename</div>
           </div>
         </div>
         <div class="minimainsite">
@@ -163,12 +163,7 @@
                 <li>
                   <div class="linkbox">
                     <p>University of Texas Stats CSV</p>
-                    <p>
-                      View:&nbsp;&nbsp;
-                      <a href="#csvheading"
-                        ><i class="fa-regular fa-eye"></i
-                      ></a>
-                    </p>
+
                     <p>
                       <!-- download attribute means they will download it -->
                       Download:&nbsp;&nbsp;<a
@@ -181,7 +176,7 @@
                 </li>
                 <li>
                   <div class="linkbox">
-                    <p>Longest Coursenames UT</p>
+                    <p>Longest Coursenames each degreeplan UT</p>
                     <p style="display: none">
                       View:&nbsp;&nbsp;
                       <a href="#csvheading"
@@ -200,7 +195,7 @@
                 </li>
                 <li>
                   <div class="linkbox">
-                    <p>Shortest Coursenames UT</p>
+                    <p>Shortest Coursenames each degreeplan UT</p>
                     <p style="display: none">
                       View:&nbsp;&nbsp;
                       <a href="#csvheading"
@@ -225,24 +220,39 @@
           <div class="rightcontent">
             <!-- charts and visuals in this one -->
             <img
-              src="metaassets/degreeprogramcount.png"
+              src="utaustin-site/metaassets/degreeprogramcount.png"
               alt="degreecountpng"
               id="degreecountpng"
             />
           </div>
           <!-- this is one long horizontal div -->
         </div>
+        <div class="footnotes">
+          <div class="rightfootnotes">
+            <p>
+              1. This number includes cross referenced courses across
+              departments. <br />
+              For example. HIS 320F and URB 322T being the same. <br />So unique
+              courses is likely lower. But this is the total number of course
+              entries across every department page.
+            </p>
+          </div>
+        </div>
         <div class="morestats">
           <img
-            src="metaassets/topdegreehours.png"
+            src="utaustin-site/metaassets/topdegreehours.png"
             alt=""
             id="topdegreehourspng"
           />
-          <img src="metaassets/topmajorhours.png" alt="" id="topmajorhours" />
+          <img
+            src="utaustin-site/metaassets/topmajorhours.png"
+            alt=""
+            id="topmajorhours"
+          />
         </div>
         <!-- end mini main site container -->
         <div class="renderedcsvdiv">
-          <h3 id="csvheading">University of Texas Stats CSV, rendered</h3>
+          <h3 id="csvheading">University of Texas Stats per Degree Program</h3>
           <div id="csvtablecontainer"></div>
         </div>
       </div>
@@ -257,27 +267,34 @@
       <footer>
         <div class="footerleft">
           <div class="links">
-            <a href="aboutpage.html">About</a>
+            <div class="tooltip">
+              <a href="../../aboutpage.html">About</a>
+            </div>
 
-            <a href="index.html">Home</a>
+            <div class="tooltip">
+              <a href="../../index.html">Home</a>
+            </div>
+
+            <div class="tooltip">
+              <a href=".../../exceltemplates.html">Excel Templates Breakdown</a>
+            </div>
           </div>
-          <p id="statement">DegreeView 2025</p>
         </div>
 
         <div class="footerright">
           <img
             id="smalllogo"
-            src="metaassets/minilogo.png"
+            src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
             alt="smalldegreeviewlogo"
           />
+          <p id="statement">DegreeView 2025</p>
         </div>
-        <!--  -->
       </footer>
     </div>
-    <script src="javascript_files/headingcolorchange.js"></script>
+    <script src="utaustin-site/javascript_files/headingcolorchange.js"></script>
     <!-- sheet js stuff -->
     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
-    <script src="javascript_files/statstable.js"></script>
+    <script src="utaustin-site/javascript_files/statstable.js"></script>
   </body>
 </html>
