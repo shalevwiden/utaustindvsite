@@ -367,26 +367,8 @@ tr:nth-child(even) {
   align-items: center;
   justify-content: center;
 }
-#returnbutton {
-  width: 20%;
-  height: 95px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s, color 0.3s;
-  background-color: #153f66;
-
-  border-radius: 35px;
-  padding: 20px;
-  color: white;
-}
-#returnbutton a {
+a {
   text-decoration: none;
-  color: white;
-  font-size: 19px;
-  font-weight: bold;
-  /* nice font when bolded */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
   /* make the whole li box clickable */
   display: flex;
@@ -394,13 +376,32 @@ tr:nth-child(even) {
   justify-content: center;
   width: 100%;
   height: 100%;
-  transition: color 0.3s;
-}
-#returnbutton:hover {
-  cursor: pointer;
-  background-color: #284dbc;
-}
 
+  #returnbutton {
+    width: 20%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #153f66;
+
+    border-radius: 35px;
+    padding: 20px;
+    color: white;
+    transition: color 0.3s;
+
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    /* nice font when bolded */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    &:hover {
+      cursor: pointer;
+      background-color: #284dbc;
+    }
+  }
+}
 .visuals {
   height: calc(100%-100px);
   display: flex;
