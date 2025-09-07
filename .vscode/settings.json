@@ -15,8 +15,6 @@
     "folder1/src/scss/**/*.scss",
     "folder2/src/scss/**/*.scss"
   ],
-  "liveSassCompile.settings.excludeList": [
-    "**/node_modules/**",
-    "**/_*.scss"
-  ]
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", "**/_*.scss"],
+  "liveServer.settings.port": 5501
 }

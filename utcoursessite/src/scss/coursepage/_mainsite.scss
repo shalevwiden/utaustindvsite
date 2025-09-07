@@ -324,6 +324,15 @@ $statslineborderscolor: #1c94e5;
           width: 60%;
         }
       }
+      #averagelength {
+        .statsname {
+          width: 60%;
+        }
+        .statscontent {
+          font-size: 25px;
+          width: 40%;
+        }
+      }
     }
   }
 }

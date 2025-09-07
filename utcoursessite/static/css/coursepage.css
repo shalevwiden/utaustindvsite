@@ -578,6 +578,13 @@ footer a:hover {
 .mainsite .rightcontent .departmentstats #samenamecount .statsname {
   width: 60%;
 }
+.mainsite .rightcontent .departmentstats #averagelength .statsname {
+  width: 60%;
+}
+.mainsite .rightcontent .departmentstats #averagelength .statscontent {
+  font-size: 25px;
+  width: 40%;
+}
 
 .undermainsite {
   background-color: rgb(255, 255, 255);
