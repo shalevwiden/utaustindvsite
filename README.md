@@ -23,3 +23,7 @@ Currently only one, and up down animation. But in the future I can see:
 One that moves side to side like a wave.
 
 And one that does some random crazy stuff.
+
+### Sep 28, 2025
+
+For Vercel.json, the user requests the sourcepath. Then they are served the destination path.
