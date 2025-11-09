@@ -158,6 +158,17 @@
             <div class="statstitle">Coursecode of shortest coursename</div>
           </div>
         </div>
+        <div class="footnotes">
+          <div class="rightfootnotes">
+            <p>
+              1. This number includes cross referenced courses across
+              departments. <br />
+              For example. HIS 320F and URB 322T being the same. <br />So unique
+              courses is likely lower. But this is the total number of course
+              entries across every department page.
+            </p>
+          </div>
+        </div>
         <div class="minimainsite">
           <div class="leftcontent">
             <div class="filescontainer" id="csvcontainer">
@@ -244,17 +255,55 @@
           </div>
           <!-- this is one long horizontal div -->
         </div>
-        <div class="footnotes">
-          <div class="rightfootnotes">
-            <p>
-              1. This number includes cross referenced courses across
-              departments. <br />
-              For example. HIS 320F and URB 322T being the same. <br />So unique
-              courses is likely lower. But this is the total number of course
-              entries across every department page.
-            </p>
+        <div class="minimainsite" id="database">
+          <div class="leftcontent">
+            <div class="filescontainer" id="csvcontainer">
+              <h3>Database Files</h3>
+              <ul>
+                <li>
+                  <div class="linkbox" id="everyutcourse">
+                    <p>Every Course at UT Database</p>
+
+                    <p>
+                      <!-- download attribute means they will download it -->
+                      Download:&nbsp;&nbsp;<a
+                        href="https://storage.googleapis.com/degreeview-ut/ut-stats/databases/universitywidedatabase.db"
+                        download
+                        ><i class="fa-solid fa-arrow-up-from-bracket"></i
+                      ></a>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="linkbox" id="everyricecourse">
+                    <p>Every Course at Rice Database</p>
+
+                    <p>
+                      <!-- download attribute means they will download it -->
+                      Download:&nbsp;&nbsp;<a
+                        href="https://storage.googleapis.com/degreeview-ut/ut-stats/databases/riceuniversitywidedatabase.db"
+                        download
+                        ><i class="fa-solid fa-arrow-up-from-bracket"></i
+                      ></a>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
+          <!--  -->
+
+          <div class="rightcontent">
+            <!-- charts and visuals in this one -->
+            <img
+              src="utaustin-site/metaassets/db_image.png"
+              alt="degreecountpng"
+              id="databasepng"
+            />
+          </div>
+          <!-- this is one long horizontal div -->
         </div>
+
         <div class="morestats">
           <img
             src="utaustin-site/metaassets/topdegreehours.png"
