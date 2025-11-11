@@ -3,18 +3,9 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "/folder1/static/css"
-    },
-    {
-      "format": "expanded",
-      "extensionName": ".css",
-      "savePath": "/folder2/static/css"
+      "savePath": "/static/css"
     }
   ],
-  "liveSassCompile.settings.includeItems": [
-    "folder1/src/scss/**/*.scss",
-    "folder2/src/scss/**/*.scss"
-  ],
-  "liveSassCompile.settings.excludeList": ["**/node_modules/**", "**/_*.scss"],
-  "liveServer.settings.port": 5503
+  "liveSassCompile.settings.includeItems": ["src/scss/**/*.scss"],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", "**/_*.scss"]
 }

@@ -41,6 +41,7 @@
   font-style: italic;
   font-weight: 500;
   color: #5dabf3;
+  margin: 0;
 }
 .minimainsite .leftcontent .excelblock .exceldescription a:hover {
   text-decoration: underline;
