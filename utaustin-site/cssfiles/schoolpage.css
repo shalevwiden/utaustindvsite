@@ -120,7 +120,7 @@ Above mainsite and its children
   text-decoration: none;
 
   color: rgb(200, 74, 12);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -577,7 +577,7 @@ Mobile Screens
     font-size: 13px;
   }
 
-  .breadcrumbs #current {
+  .breadcrumbs li#current {
     /* this is the current page the user is on */
     font-size: 13px;
     font-weight: bold;
