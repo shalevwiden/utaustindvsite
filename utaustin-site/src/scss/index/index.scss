@@ -362,6 +362,14 @@ Begin left content stuff
   border-radius: 25px;
 }
 
+#randompagebutton:active {
+  background-color: #153f66;
+  color: white;
+
+  border: 5px solid rgb(15, 29, 89);
+  border-radius: 25px;
+}
+
 /* end under main site */
 
 /* beginning of all the media quieries */
