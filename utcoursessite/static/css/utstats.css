@@ -47,6 +47,51 @@ This is all nav bar stuff:*/
 /* 
 Above mainsite and its children
 */
+ul.otherpageslinks {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  -moz-column-gap: 90px;
+       column-gap: 90px;
+  /* since doing space evenly, remove gap */
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+ul.otherpageslinks li {
+  /* make them big so you can hover */
+  width: 25%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #153f66;
+  border-radius: 35px;
+  padding: 20px;
+}
+ul.otherpageslinks li:hover {
+  background-color: #284dbc;
+  cursor: pointer;
+}
+ul.otherpageslinks li a {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  /* nice font when bolded */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* make the whole li box clickable */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: color 0.3s;
+}
+
 .abovemainsite {
   display: flex;
   flex-direction: column;

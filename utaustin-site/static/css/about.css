@@ -28,8 +28,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -322,7 +321,7 @@ still in top nav, but now the homeandabout section
   justify-content: flex-start;
   align-items: center;
   -moz-column-gap: 25px;
-  column-gap: 25px;
+       column-gap: 25px;
   /* this was that icon stuff I was trying to find */
   width: 100%;
   /* for now */
@@ -370,7 +369,7 @@ Begin left content stuff
   justify-content: space-between;
   align-items: center;
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
 }
 
 /* this changes the styling on the names of the file like "Sample Semester PDF */
@@ -437,7 +436,7 @@ Begin left content stuff
   align-items: center;
   justify-content: flex-start;
   -moz-column-gap: 10px;
-  column-gap: 10px;
+       column-gap: 10px;
   font-weight: bold;
 }
 
@@ -498,7 +497,7 @@ footer {
   align-items: center;
   justify-content: center;
   -moz-column-gap: 30px;
-  column-gap: 30px;
+       column-gap: 30px;
   font-family: Helvetica, sans-serif;
 }
 
@@ -509,7 +508,7 @@ footer .links {
   align-items: center;
   justify-content: space-around;
   -moz-column-gap: 35px;
-  column-gap: 35px;
+       column-gap: 35px;
   font-size: 19px;
 }
 
@@ -682,7 +681,7 @@ Mobile Screens
     justify-content: flex-start;
     align-items: center;
     -moz-column-gap: 15px;
-    column-gap: 15px;
+         column-gap: 15px;
     /* this was that icon stuff I was trying to find */
     width: 100%;
   }
@@ -794,4 +793,4 @@ Mobile Screens
     z-index: 999;*/
     filter: drop-shadow(4px 1px 3px rgb(67, 66, 66));
   }
-} /*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=about.css.map */
